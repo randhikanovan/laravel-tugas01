@@ -6,7 +6,7 @@
 </head>
 <body>
 
-	<form action="welcome.html" method="POST">
+	<form action="/welcome" method="POST">
 	@csrf
 	<!-- bagian awal, isinya tag heading -->
 	<div>
@@ -18,11 +18,11 @@
 	<div>
 		<label for="nama_user">First Name:</label>
 		<br><br>
-		<input type="text" name="" value="" id="nama_user">
+		<input type="text" name="first_name" value="" id="nama_user">
 		<br><br>
 		<label for="nama_user">Last Name:</label>
 		<br><br>
-		<input type="text" name="" value="" id="nama_user">
+		<input type="text" name="last_name" value="" id="nama_user">
 		<br><br>
 	</div>
 

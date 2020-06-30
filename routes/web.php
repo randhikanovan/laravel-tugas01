@@ -15,6 +15,16 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/form', function () {
-    return view('form');
+Route::get('/register', function () {
+    return view('register');
 });
+
+// Route::get('/welcome/{nama_awal}', function ($nama) {
+//     return view('welcome', ["nama_awal" => $nama["first_name"]]);
+// });
+
+// Route::post('/welcome/{request}', function ($request) {
+//     return view('welcome', ["nama_awal" => $request["first_name"]]);
+// });
+
+Route::post('/welcome', 'RegisterCOntroller@welcome');
