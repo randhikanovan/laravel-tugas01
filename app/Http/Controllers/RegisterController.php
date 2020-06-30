@@ -11,6 +11,6 @@ class RegisterController extends Controller
         $nama_awal = $request["first_name"];
         $nama_akhir = $request["last_name"];
         //return $nama_awal." ".$nama_akhir;
-        return view('welcome');
+        return view('welcome', ["nama_awal" => $nama_awal, "nama_akhir" => $nama_akhir]);
     }
 }
