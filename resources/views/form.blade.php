@@ -6,8 +6,8 @@
 </head>
 <body>
 
-	<form action="welcome.html">
-
+	<form action="welcome.html" method="POST">
+	@csrf
 	<!-- bagian awal, isinya tag heading -->
 	<div>
 		<h1> Buat Account Baru! </h1>
@@ -24,12 +24,6 @@
 		<br><br>
 		<input type="text" name="" value="" id="nama_user">
 		<br><br>
-
-		<form action="/selamat" method="POST">
-        @csrf
-        <input type="text" name="nama">
-        <input type="submit" value="masuk">
-    	</form>
 	</div>
 
 	
